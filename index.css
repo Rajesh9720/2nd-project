@@ -1,0 +1,99 @@
+ *{text-align: center;}
+input{border-radius:10px; border:none;height:30px; width:15%; margin: 20px;cursor:pointer;}
+p{font-size: 40px;font-weight: bolder}
+/* h1 {
+  font-size:40px;
+  background: -webkit-linear-gradient(white,blue);    
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+h1{
+  color:white;
+}
+
+body{
+  height: 100vh;
+  background: linear-gradient(to bottom,skyblue,cornflowerblue);
+  overflow: hidden;
+}
+
+
+.cloud.one{
+  top: 40%;
+  width:100px;
+  height:40px;
+  animation: zoomies 18s infinite linear;
+}
+
+.cloud.two{
+  top: 30%;
+  width:60px;
+  height:20px;
+  animation: zoomies 16s infinite linear;
+}
+.cloud.three{
+  top: 10%;
+  width:120px;
+  height: 40px;
+  animation: zoomies 14s infinite linear;  
+
+}
+
+.cloud.four{
+  top: 70%;
+  width:150px;
+  height:40px;
+  animation: zoomies 20s infinite linear; 
+}
+.cloud.five{
+  top: 60%;
+  width:150px;
+  height:40px;
+  animation: zoomies 15s infinite linear; 
+}
+.cloud.five{
+  top: 80%;
+  width:180px;
+  height:45px;
+  animation: zoomies 15s infinite linear; 
+}
+
+.cloud{
+  position:absolute;
+  left: 0;
+  background: white;
+  border-radius: 1000px;
+  animation: zoomies 5s infinite linear;
+}
+
+.cloud::before{
+  content:'';
+  position:absolute;
+  top:-80%;
+  left: 10%;
+  width: 50%;
+  height: 150%;
+  background: white;
+  border-radius: 50%;
+
+}
+.cloud::after{
+  content:'';
+  position:absolute;
+  top:-40%;
+  right: 20%;
+  width: 30%;
+  height: 100%;
+  background: white;
+  border-radius: 50%;
+}
+@keyframes zoomies {
+
+ from{
+  left: 0;
+ }
+ to{
+  left: 100%;
+ }
+  
+}
